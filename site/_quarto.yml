@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: _site
+website:
+  title: "Fantasy Football Analytics"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Posts
+        href: posts/index.qmd
+      - text: Dashboards
+        href: dashboards/weekly-summary.qmd
+    right:
+      - text: About
+        href: about.qmd
+  sidebar:
+    style: floating
+format:
+  html:
+    theme: cosmo
+    toc: true
+    css: assets/css/custom.scss
+execute:
+  freeze: auto        # cache computations
+  echo: false         # default; override per chunk

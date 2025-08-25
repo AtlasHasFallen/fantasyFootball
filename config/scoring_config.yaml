@@ -1,0 +1,76 @@
+# Fantasy Football League Scoring Settings (YAML)
+# Save as scoring_config.yaml and load with PyYAML or similar
+Passing:
+  PY25: 0.04                # Every 25 passing yards
+  PTD: 4                    # TD Pass
+  INT: -2                   # Interceptions Thrown
+  2PC: 2                    # 2pt Passing Conversion
+Rushing:
+  RY10: 0.1                 # Every 10 rushing yards
+  RTD: 6                    # TD Rush
+  2PR: 2                    # 2pt Rushing Conversion
+Receiving:
+  REY10: 0.1                # Every 10 receiving yards
+  RETD: 6                   # TD Reception
+  2PRE: 2                   # 2pt Receiving Conversion
+Kicking:
+  PAT: 1                    # Each PAT Made
+  FGM: -1                   # Total FG Missed
+  FG0: 3                    # FG Made (0-39 yards)
+  FG40: 4                   # FG Made (40-49 yards)
+  FG50: 5                   # FG Made (50-59 yards)
+  FG60: 5                   # FG Made (60+ yards)
+Team_Defense_Special_Teams:
+  KRTD: 6                   # Kickoff Return TD
+  PRTD: 6                   # Punt Return TD
+  INTTD: 6                  # Interception Return TD
+  FRTD: 6                   # Fumble Return TD
+  BLKKRTD: 6                # Blocked Punt or FG return for TD
+  SK: 1                     # Each Sack (Team D/ST)
+  BLKK: 2                   # Blocked Punt, PAT or FG
+  INT: 2                    # Each Interception (Team D/ST)
+  FR: 2                     # Each Fumble Recovered (Team D/ST)
+  SF: 2                     # Each Safety (Team D/ST)
+  PA0: 5                    # 0 points allowed
+  PA1: 4                    # 1-6 points allowed
+  PA7: 3                    # 7-13 points allowed
+  PA14: 1                   # 14-17 points allowed
+  PA28: -1                  # 28-34 points allowed
+  PA35: -3                  # 35-45 points allowed
+  PA46: -5                  # 46+ points allowed
+  YA100: 5                  # <100 total yards allowed
+  YA199: 3                  # 100-199 total yards allowed
+  YA299: 2                  # 200-299 total yards allowed
+  YA399: -1                 # 350-399 total yards allowed
+  YA449: -3                 # 400-449 total yards allowed
+  YA499: -5                 # 450-499 total yards allowed
+  YA549: -6                 # 500-549 total yards allowed
+  YA550: -7                 # 550+ total yards allowed
+Miscellaneous:
+  FTD: 6                    # Fumble Recovered for TD
+  FUML: -2                  # Total Fumbles Lost
+Defensive_Players:
+  SK_DP: 2                  # Each Sack (Defensive Player)
+  TK: 0.5                   # Total Tackles
+  BLKK_DP: 2                # Blocked Punt, PAT or FG (Defensive Player)
+  INT_DP: 3                 # Each Interception (Defensive Player)
+  FR_DP: 3                  # Each Fumble Recovered (Defensive Player)
+  SF_DP: 3                  # Each Safety (Defensive Player)
+Head_Coach:
+  TW: 2                     # Team Win (Head Coach)
+  TL: -2                    # Team Loss (Head Coach)
+  WM25: 10                  # 25+ point Win Margin
+  WM20: 8                   # 20-24 point Win Margin
+  WM15: 6                   # 15-19 point Win Margin
+  WM10: 4                   # 10-14 point Win Margin
+  WM5: 2                    # 5-9 point Win Margin
+  WM1: 1                    # 1-4 point Win Margin
+Punting:
+  PT10: 2                   # Punts Inside the 10
+  PT20: 1                   # Punts Inside the 20
+  PTB: -1                   # Blocked Punts
+  PTA44: 5                  # Punt Average 44.0+
+  PTA42: 4                  # Punt Average 42.0-43.9
+  PTA40: 3                  # Punt Average 40.0-41.9
+  PTA38: 2                  # Punt Average 38.0-39.9
+  PTA36: 1                  # Punt Average 36.0-37.9

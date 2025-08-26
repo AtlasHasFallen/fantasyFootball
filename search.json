@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
+    "section": "",
+    "text": "Welcome to the posts section. Add new analysis articles as .qmd files here, e.g.:\n\n2025-08-26-weekly-top-performers.qmd\n2025-08-26-building-the-scoring-engine.qmd\n\nEach file should include YAML front matter:\n---\ntitle: \"Title Here\"\ndate: 2025-08-26\ncategories: [analysis]\n---\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About This Project",
+    "section": "",
+    "text": "This project is a reproducible fantasy football analytics pipeline built with:\n\nPolars for fast columnar data wrangling\nYAML-driven fantasy scoring configuration\nAutomated weekly + season consolidation (intersection/union schema modes)\nOptional headshot retrieval via the Sleeper API\n\n\nData Flow\n\nRaw CSVs (Kaggle / scraped) placed in data/.\nmodules/data_cleaner.py cleans, normalizes, infers numeric types, and filters by current roster.\nConsolidation creates unified Parquet(s) and applies scoring.\nCurated extracts (planned) will live in data/curated/ for lightweight site renders.\n\n\n\nFantasy Scoring\nRules defined in config/scoring_config.yaml map stat tokens (e.g. PTD, RY10) to point multipliers.\n\n\nHeadshots\nmodules/player_images.py pulls player headshots (Sleeper) into data/headshots/. A mapping Parquet/CSV is written for joining.\n\n\nTechnology Choices\n\n\n\nAspect\nChoice\nRationale\n\n\n\n\nDataFrames\nPolars\nPerformance & lazy API\n\n\nStorage\nParquet (option DuckDB later)\nColumnar & compact\n\n\nVisualization\nplotnine (planned in posts)\nGrammar of graphics\n\n\nSite\nQuarto\nReproducible docs & code execution\n\n\n\n\n\nRoadmap\n\nAdd positional weekly leader dashboards\nPublish small sample dataset for public repo\nAdd DuckDB file for ad hoc SQL\nIntegrate great_tables formatting for nicer tables\n\n\n\nLicense\nAdd an explicit license (MIT/Apache-2.0) at project root if you plan public reuse.\n\n\nContact\nOpen issues or discussions in the GitHub repository."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Fantasy Football Analytics",
+    "section": "",
+    "text": "Welcome to the project site. This repository powers an automated fantasy football data workflow:"
+  },
+  {
+    "objectID": "index.html#quick-stats-snapshot",
+    "href": "index.html#quick-stats-snapshot",
+    "title": "Fantasy Football Analytics",
+    "section": "Quick Stats Snapshot",
+    "text": "Quick Stats Snapshot\n\n\nWeekly dataset not found (build locally)."
+  },
+  {
+    "objectID": "index.html#top-current-week-performers",
+    "href": "index.html#top-current-week-performers",
+    "title": "Fantasy Football Analytics",
+    "section": "Top Current Week Performers",
+    "text": "Top Current Week Performers\n\n\nWeekly dataset not found."
+  },
+  {
+    "objectID": "index.html#how-scoring-works",
+    "href": "index.html#how-scoring-works",
+    "title": "Fantasy Football Analytics",
+    "section": "How Scoring Works",
+    "text": "How Scoring Works\nScoring rules are defined in config/scoring_config.yaml and applied during consolidation."
+  },
+  {
+    "objectID": "index.html#next-steps",
+    "href": "index.html#next-steps",
+    "title": "Fantasy Football Analytics",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nAdd interactive dashboards (weekly positional leaders)\nPublish curated sample datasets\nIntegrate headshots (already downloaded under data/headshots/ locally)"
+  },
+  {
+    "objectID": "index.html#contributing",
+    "href": "index.html#contributing",
+    "title": "Fantasy Football Analytics",
+    "section": "Contributing",
+    "text": "Contributing\nIssues / ideas welcome via GitHub."
+  }
+]
